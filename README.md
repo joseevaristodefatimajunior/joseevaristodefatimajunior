@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @joseevaristodefatimajunior
-- olamudochamojos
+- olamudo chamo jose
 - 👀 I’m interested in ...
 - progamacao de sistema
 - ven comigo aprender
