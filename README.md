@@ -1,15 +1,81 @@
-- 👋 Hi, I’m @joseevaristodefatimajunior
-- olamudo chamo jose
-- 👀 I’m interested in ...
-- progamacao de sistema
-- ven comigo aprender
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
 
-<!---
-joseevaristodefatimajunior/joseevaristodefatimajunior is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro - Módulo 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+<!--
+    CONSULTEM O README PARA DICAS DE COMO SOLUCIONAR O EXERCÍCIO!
+-->
+
+<body>
+    <header>
+        <h1>Adquira seu veículo agora mesmo!</h1>
+    </header>
+
+    <div id="carousel-imagens">
+        <img src="./assets/slide1.png" alt="Carro da Porsche">
+        <img src="./assets/slide2.png" alt="Carro da BMW">
+        <img src="./assets/slide3.png" alt="Carro da Ford">
+    </div>
+
+    <div class="container">
+        <h2>Insira seus dados para finalização da compra</h2>
+        <form id="form">
+            <div class="form-campo">
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" placeholder="John Doe">
+            </div>
+            <div class="form-campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+            </div>
+            <div class="form-campo">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="form-campo">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+            <div class="form-campo">
+                <label for="endereco">Endereço completo</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, estado">
+            </div>
+            <div class="form-campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carousel').slick({
+                autoplay: true,
+                arrows: false
+            })
+        })
+    </script>
+</body>
+
+</html>
